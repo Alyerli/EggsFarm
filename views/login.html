@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/resources/css/style.css" type="text/css">
+    <!-- <style>
+        #container-white{
+            position: absolute;
+            width: 571px;
+            height: 445px;
+
+            background: #F5F5F5;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 40px;
+        }
+    </style> -->
+    <title>Perfil de Usuario</title>
+</head>
+<body>
+    <div id="container-white">
+        <div id="container-perfil"></div>
+        <div id="container-form">
+            <form action="">
+
+                <label for="nombre-completo">Nombre Completo:</label>
+                <input type="text" id="nombre-completo" name="nombre-completo" value="fulanita" required>
+                <br>
+                
+                <label for="correo">Correo Electronico:</label>
+                <input type="email" name="correo" id="correo"  value="fulanita@gmail.com" pattern=".+@globex\.com" required><br>
+
+                <label for="usuario">Usuario:</label>
+                <input type="text" name="usuario" id="usuario" value="fulanita"><br>
+
+                <label for="contra">Contraseña:</label>
+                <input type="password" name="contra" id="contra" placeholder="aqui Contraseña?"><br>
+
+                <label for="rol">Rol:</label>
+                <input type="text" id="rol" name="roll" value="Master"><br>
+
+                <input type="button" type="submit" value="Editar">
+                <input type="button" type="submit" value="Eliminar">
+
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
