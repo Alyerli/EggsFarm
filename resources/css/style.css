@@ -144,10 +144,11 @@ label {
   width: 57px;
   height: 26px;
 }
+/*box */
 #nombre-completo {
+  margin-left: 4px;
   padding-left: 22px;
-  width: 289px;
-  height: 26px;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -163,16 +164,16 @@ label {
   border-radius: 29px;
 }
 #correo {
+  margin-left: 4px;
   padding-left: 22px;
   margin-bottom: 6px;
-  width: 289px;
-  height: 26px;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #78756e;
   box-sizing: border-box;
-  width: 269px;
+  width: 267px;
   height: 34px;
 
   background: rgba(245, 245, 245, 0.76);
@@ -182,17 +183,16 @@ label {
 }
 
 #usuario {
+  margin-left: 4px;
   padding-left: 22px;
   margin-bottom: 6px;
-  width: 100px;
-  height: 26px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 
   color: #78756e;
   box-sizing: border-box;
-  width: 349px;
+  width: 365px;
   height: 34px;
 
   background: rgba(245, 245, 245, 0.76);
@@ -202,6 +202,7 @@ label {
 }
 
 #contra {
+  margin-left: 4px;
   width: 127px;
   height: 26px;
   font-weight: 700;
@@ -211,7 +212,7 @@ label {
   padding-left: 22px;
   margin-bottom: 6px;
   box-sizing: border-box;
-  width: 322px;
+  width: 333px;
   height: 34px;
 
   background: rgba(245, 245, 245, 0.76);
@@ -221,8 +222,8 @@ label {
 }
 
 #rol {
-  width: 127px;
-  height: 26px;
+  margin-left: 4px;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -236,10 +237,38 @@ label {
   border-radius: 29px;
   padding-left: 22px;
 }
+
+/*box */
 #boton1 {
   margin-left: 240px;
 }
 
 #boton2 {
   margin-left: 16px;
+}
+/* boton */
+#boton1:hover {
+  background: #d8cca3;
+}
+#boton1:active {
+  background: gray;
+  color: white;
+}
+
+#boton2:hover {
+  background: #d8cca3;
+}
+#boton2:active {
+  background: gray;
+}
+/* boton */
+
+#titulo-secundario {
+  margin-top: 30px;
+  margin-left: 125px;
+  margin-bottom: 29px;
+}
+
+#esto-es-solo-del {
+  margin-left: -70px;
 }
