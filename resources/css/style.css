@@ -46,12 +46,13 @@ body {
 img {
   margin-left: 92px;
   margin-top: 28px;
+  width: 100px;
+  height: 99px;
 
   /*Esto es para cuando se agregen images, habilitar esto */
 
   /*
-  width: 100px;
-  height: 99px;
+  
   border: 3px solid rgba(0, 0, 0, 0.71);
    */
 }
@@ -77,6 +78,17 @@ img {
 }
 
 .boton-editar {
+  width: 52px;
+  height: 26px;
+
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+
+  align-items: center;
+
+  color: #2a3b0c;
+  /* */
   margin-top: -10px;
   box-sizing: border-box;
 
