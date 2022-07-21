@@ -113,6 +113,7 @@ html {
   border-color: #5d8407;
 }
 
+html,
 body {
   font-family: "Lato", sans-serif;
   font-style: italic;
