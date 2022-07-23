@@ -49,8 +49,12 @@
   line-height: 19px;
   display: flex;
   align-items: center;
-
+  text-decoration: none;
   color: #5d8407;
+}
+
+#contra-re:hover {
+  color:#455c04;
 }
 
 #cuadro-oscuro {
@@ -84,7 +88,7 @@
 
 #vaca {
   width: 483px;
-  height: 454px;
+  height: 452px;
   margin-left: 52%;
   margin-top: -350px;
 }
@@ -112,6 +116,7 @@ html {
   left: 30%;
   border-color: #5d8407;
 }
+
 
 html,
 body {
