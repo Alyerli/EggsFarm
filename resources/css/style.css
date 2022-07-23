@@ -12,7 +12,7 @@ body {
 body {
   display: flex;
   align-items: center;
-  justify-content: center;
+
   justify-content: space-around;
 }
 
@@ -28,7 +28,7 @@ body {
 }
 
 #container-perfil {
-  background: #82954b;
+  background: #cb232c;
   border-radius: 40px 40px 97px 106px;
   width: 571px;
   height: 153.17px;
@@ -37,39 +37,26 @@ body {
 #container-foto {
   width: 249.61px;
   height: 148.5px;
-  background: #d8cca3;
+  background: #ebebeb;
   border-radius: 40px 40px 97px 106px;
   margin-left: 320.75px;
   margin-top: -100px;
 }
 
 img {
-  margin-left: 92px;
+  margin-left: 88px;
   margin-top: 28px;
-  width: 100px;
-  height: 99px;
-
-  /*Esto es para cuando se agregen images, habilitar esto */
-
-  /*
-  
-  border: 3px solid rgba(0, 0, 0, 0.71);
-   */
+  width: 88px;
+  width: 95px;
+  height: 95px;
 }
 
 #container-form {
-  text-align: justify;
   margin-left: 39px;
   margin-top: 22.8px;
 }
 
 .input-field {
-  box-sizing: border-box;
-  height: 34px;
-  background: rgba(245, 245, 245, 0.76);
-  border: 1px solid #b3b722;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 29px;
 }
 
 #titulo-principal {
@@ -85,9 +72,6 @@ img {
   font-size: 16px;
   line-height: 19px;
 
-  align-items: center;
-
-  color: #2a3b0c;
   /* */
   margin-top: -10px;
   box-sizing: border-box;
@@ -95,9 +79,6 @@ img {
   width: 111px;
   height: 35px;
 
-  background: rgba(98, 131, 1, 0.67);
-  border: 1px solid #628301;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 14px;
 }
 h1 {
@@ -107,10 +88,11 @@ h1 {
   margin-block-end: 0em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  font-weight: bold;
+
   font-weight: 800;
   font-size: 32px;
   line-height: 38px;
+  color: #f5f5f5;
 }
 
 label {
@@ -159,7 +141,7 @@ label {
   height: 34px;
 
   background: rgba(245, 245, 245, 0.76);
-  border: 1px solid #b3b722;
+  border: 1px solid #f7991c;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 29px;
 }
@@ -177,7 +159,7 @@ label {
   height: 34px;
 
   background: rgba(245, 245, 245, 0.76);
-  border: 1px solid #b3b722;
+  border: 1px solid #f7991c;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 29px;
 }
@@ -196,7 +178,7 @@ label {
   height: 34px;
 
   background: rgba(245, 245, 245, 0.76);
-  border: 1px solid #b3b722;
+  border: 1px solid #f7991c;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 29px;
 }
@@ -216,7 +198,7 @@ label {
   height: 34px;
 
   background: rgba(245, 245, 245, 0.76);
-  border: 1px solid #b3b722;
+  border: 1px solid #f7991c;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 29px;
 }
@@ -231,32 +213,42 @@ label {
   box-sizing: border-box;
   width: 166px;
   height: 34px;
+  padding-left: 22px;
+
   background: rgba(245, 245, 245, 0.76);
-  border: 1px solid #b3b722;
+  border: 1px solid #f7991c;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 29px;
-  padding-left: 22px;
 }
 
 /*box */
 #boton1 {
   margin-left: 240px;
+  background: #f7991c;
+  border: 1px solid #cb232c;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #020202;
 }
 
 #boton2 {
   margin-left: 16px;
+  background: #cb232c;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #f5f5f5;
 }
 /* boton */
 #boton1:hover {
-  background: #d8cca3;
+  background: #ebebeb;
+  color: #000000;
 }
 #boton1:active {
   background: gray;
-  color: white;
 }
 
 #boton2:hover {
-  background: #d8cca3;
+  background: #ebebeb;
+  color: #000000;
 }
 #boton2:active {
   background: gray;
