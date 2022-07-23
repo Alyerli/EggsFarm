@@ -1,10 +1,10 @@
-package com.eggsfarm;
+package com.eggsfarm.cds;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EggsFarmApplicationTests {
+class EggsfarmApplicationTests {
 
 	@Test
 	void contextLoads() {

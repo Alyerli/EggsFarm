@@ -8,11 +8,11 @@
 		<version>2.7.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.eggsfarm</groupId>
-	<artifactId>EggsFarm</artifactId>
+	<groupId>com.eggsfarm.cds</groupId>
+	<artifactId>eggsfarm</artifactId>
 	<version>1.0</version>
-	<name>EggsFarm</name>
-	<description>Proyecto final de construccion de software</description>
+	<name>eggsfarm</name>
+	<description>Proyecto finald de Construccion de Software</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
