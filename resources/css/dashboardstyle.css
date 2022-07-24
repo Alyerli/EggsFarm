@@ -1,0 +1,162 @@
+/* ------------------------------- GENERAL TAGS   -----------------------------------*/
+div {
+    position: absolute;
+    border-radius: 40px;
+    height: 98vh;
+  }
+  
+  body {
+    background-color: #000003e6;
+  }
+/* -----------------------------------------------------------------------------------*/
+
+/* ------------------------------- CONTENEDOR MAIN -----------------------------------*/
+
+#main-container{
+    width: 80vw;
+    background: #fffad4;
+    margin-left: 10vw;
+}         
+    /*---- LOGO / NOMBRE / ROL-NAME ---- */
+
+    .menu{  /* container */
+        width: 12em;
+        height: 32.7em;
+    }
+    .logo img {
+        margin-left: 3em;
+        margin-top: 1em;
+        width: 6.2em;
+        height: 6.2em;
+        border-radius: 60%;
+        cursor: pointer;
+      }
+     
+
+    .user-name h5 {
+        font-family: "Lato", sans-serif;
+        color: #5b252d;
+        font-size: 20px;
+        margin-top: 7.5em;
+        margin-left: 2.7em;
+        
+      }
+      .rol-name {  /* container */
+        width: 11.6em;
+        height: 2em;
+        background: #c24914;
+        border-radius: 34px 0px 0px 34px;
+        margin-top:9em;
+        margin-left: 0.4em;
+      }
+      
+      .rol-name h2 {
+        font-family: "Lato", sans-serif;
+        font-size: 17px;
+        color: #ffffff;
+        margin-left: 4.6em;
+        margin-top: 0.5em;
+      }
+
+     /*------------------- MENU STYLE ------------------ */  
+      
+    #main-container .iconos { /* ICONOS */
+        font-size: 22px;
+        color: #c24914;
+    }
+  
+    #main-container .sfonts { /* ESTILO DE LAS OPCIONES DEL MENU */
+        font-family: "Lato";
+        font-style: bold;
+        padding-left: 8px;
+        font-size: 17px;
+        margin: 0 auto;
+        color: #5c3d2e;
+    }   
+
+
+    #op-inventario { /* inventario menu option */
+        margin-top: 12em;
+    }
+    
+    #op-ventas { /* ventas menu option */
+        margin-top: 14em;
+    }
+    
+    #op-reporte { /* reporte menu option */
+        margin-top: 16em;
+    }
+
+    #op-miperfil { /* mi-perfil menu option */
+        margin-top: 18em;
+    }
+    
+    #op-registro { /* registro menu option (el registro)*/
+        margin-top: 20em;
+    }
+
+    #op-gestionarusuarios { /* usuarios menu option (La tabla de los usuarios)*/
+        margin-top: 22em;
+    }
+
+    #op-salir { /* salir menu option */
+        width: auto;
+        height: auto;
+        margin-top: 30em;
+        margin-left: 3.6em;
+        cursor: pointer;
+    }
+  
+    #main-container .op {
+        border-radius: 5%;
+        width: 11em;
+        height: auto;
+        margin-left: 1em;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color border-bottom-color border-bottom-style 5s delay 1s;
+    }
+    
+    .op:hover{
+        background-color: #dfd9a992;
+    }
+    .op:active{
+        background-color: #dfd9a992;
+        border-bottom-color: #c24914;
+        border-bottom-style: solid;
+    }
+    .op:focus{
+        background-color: #dfd9a992;
+        border-bottom-color: #c24914;
+        border-bottom-style: solid;
+    }
+
+
+
+/* ------------------------------- SECOND MAIN CONTAINER -----------------------------*/
+#second-main-container{
+  width: 39.3em;
+  background-color: #c24914;
+  margin-left: 12em;
+ 
+}
+/* -----------------------------------------------------------------------------------*/
+
+/* ------------------------------- THIRD MAIN CONTAINER -----------------------------*/
+#third-main-container{
+  width: 38.3em;
+  background: #fffad4bb;
+  margin-left: 1em;
+}
+/* -----------------------------------------------------------------------------------*/
+
+/* ------------------------------- WHITE MAIN CONTAINER -----------------------------*/
+#white-main-container{
+    width: 37.3em;
+    background: #f5f5f5f5;
+    margin-left: 1em;
+}
+/* -----------------------------------------------------------------------------------*/
+
+/* -----------------------------------------------------------------------------------*/
+
