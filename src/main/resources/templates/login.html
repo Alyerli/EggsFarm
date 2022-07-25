@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/dd41032667.js" crossorigin="anonymous"></script>
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" th:href="@{/css/loginStyle.css}">
+        <link rel="icon" type="image/x-icon" th:href="@{/img/favicon-32x32.png}">
+    </head>
+    <body>
+
+        <div id="cuadro-oscuro"></div>
+        <div id="cuadro-claro">
+            <div id ="formato">
+                <div>
+                    <img id="logo" th:src="@{img/Eggis_Farm_Logo.png}"/>
+                </div><!--Logo-->
+                <h1>Iniciar Sesión</h1>
+                <form method="POST" th:action="@{/login}" class="nuevo">
+                    <div class="input-icons">
+                        <i class="fa fa-user icon"></i>
+                        <input name="username" id="username" class="input-field"  placeholder="Ingrese su usuario..." type="text" required><div class="input-icons">
+                        </div>
+
+                        <div class="input-icons">
+                            <i class="fa-solid fa-lock icon"></i>
+                            <input name="password" id="password" class="input-field" type="password" placeholder="Ingrese su contraseña..." required>
+                        </div>
+
+                        <a href="#"  id ="contra-re">Recuperar contraseña</a>
+                        <input id="boton" type="submit" value="Entrar">
+                        <div id="vaca-foto" class="nuevo">
+                            <img th:src="@{/img/Rectangle13.png}" alt="" id="vaca">
+                        </div>
+                </form>
+            </div> 
+
+        </div> 
+
+    </body>
+</html>

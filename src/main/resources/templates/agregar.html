@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head>
+        <title>Dashboard Admin</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" th:href="@{css/adminStyles.css}" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    </head>
+    <body>
+        <h1>HOME</h1>
+
+        <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/add}">Agregar Productos</a>
+
+        <div th:if="${products != null and !products.empty}">
+            <table border="1">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Valor Compra</th>
+                    <th>Valor Venta</th>
+                    <th>Stock</th>
+                    <th sec:authorize="hasRole('ROLE_ADMIN')">Editar</th>
+                    <th sec:authorize="hasRole('ROLE_ADMIN')">Eliminar</th>
+                </tr>
+
+                <tr th:each="products : ${products}">                            
+                    <td th:text="${products.nombre}"></td>
+                    <td th:text="${products.descripcion}"></td>
+                    <td th:text="${products.compra}"></td>
+                    <td th:text="${products.venta}"></td>
+                    <td th:text="${products.stock}"></td>
+                    <td sec:authorize="hasRole('ROLE_ADMIN')"><a th:href="@{/update/} + ${products.idProducts}" th:text="Editar"/></td>
+                    <td sec:authorize="hasRole('ROLE_ADMIN')"><a th:href="@{/delete/} + ${products.idProducts}" th:text="Eliminar"/></td>
+                </tr>
+            </table>
+        </div>
+
+        <div th:if="${products == null and products.empty}">
+            <b>La lista no contiene ningun producto</b>
+            </div>
+
+            <form method="POST" th:action="@{/logout}">
+                <b>User: </b> <span sec:authentication="name">Usuario que hizo login</span>
+                <b>Rol: </b> <span sec:authentication="principal.authorities">Roles</span>
+                <input type="submit" onclick="this.parentNode.submit();" value="Cerrar Sesion" />
+            </form>
+    </body>
+</html>

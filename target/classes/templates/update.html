@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Datos del Producto</h1>
+        <a th:href="@{/}">Regresar</a>  
+        <br/>
+        <form th:action="@{/save}" method="POST" th:object="${products}">
+            <input type="hidden" name="idProducts" th:field="*{idProducts}" />
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" th:field="*{nombre}" required/>
+            <br/>
+            <label for="descripcion">Descripción: </label>
+            <input type="text" name="descripcion" th:field="*{descripcion}" />
+            <br/>
+            <label for="valorCompra">Valor de Compra: </label>
+            <input type="number" name="valorCompra" th:field="*{compra}" />
+            <br/>
+            <label for="valorVenta">Valor de Venta: </label>
+            <input type="number" name="valorVenta" th:field="*{venta}" required/>
+            <br/>
+            <label for="cantidad">Cantidad: </label>
+            <input type="number" name="cantidad" th:field="*{stock}" required/>
+            <br/>
+            <input type="submit"  value="agregar"/>
+        </form>
+    </body>
+</html>

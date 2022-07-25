@@ -1,0 +1,136 @@
+#logo {
+  /*Esto es el logo */
+
+  width: 98px;
+  height: 98px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #e93e51;
+}
+
+/* Lo tome */
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+  color: rgba(40, 34, 67, 0.8);
+}
+
+/*centrlizar iconos */
+.icon {
+  padding: 10px;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 296px;
+  height: 35px;
+  text-align: center;
+  /* Anadido */
+  background: #d2e4b2;
+  border-radius: 13px;
+  box-sizing: border-box;
+  border-color: #5d8407;
+}
+
+/* Lo que tome termina */
+
+#contra-re {
+  width: 147px;
+  height: 26px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #5d8407;
+}
+
+#contra-re:hover {
+  color:#455c04;
+}
+
+#cuadro-oscuro {
+  position: absolute;
+  width: 870px;
+  height: 445px;
+
+  background: #5d8407;
+  border-radius: 60px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 125px;
+}
+
+#cuadro-claro {
+  position: absolute;
+  width: 854px;
+  height: 409px;
+  background: #d2e4b2;
+  border-radius: 60px;
+  margin-left: 21%;
+  margin-right: 20%;
+  margin-top: 115px;
+}
+
+#formato {
+  margin-left: 52px;
+  margin-right: 20%;
+  margin-top: 23px;
+}
+
+#vaca {
+  width: 483px;
+  height: 452px;
+  margin-left: 52%;
+  margin-top: -350px;
+}
+
+.nuevo {
+  flex-direction: column;
+}
+h1 {
+  color: #455c04;
+}
+
+html {
+  background-color: rgba(217, 217, 217, 0.16);
+}
+
+#boton {
+  width: 109px;
+  height: 35px;
+
+  background: rgba(143, 136, 128, 0.12);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 132px;
+  color: rgba(40, 34, 67, 0.8);
+  position: relative;
+  left: 30%;
+  border-color: #5d8407;
+}
+
+
+html,
+body {
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  background-color: #000003e6;
+    align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+#boton:hover {
+  background: #d8cca3;
+}
+#boton1:active {
+  background: gray;
+}

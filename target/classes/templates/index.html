@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" th:href="@{/css/dashboardstyle.css}" />
+        <link rel="shortcut icon" th:href="@{resources/img/Eggis_Farm_Logo.png}" type="image/x-icon"/>
+        <link rel="icon" type="image/x-icon" th:href="@{/img/favicon-32x32.png}">
+        <title>Eggis Farm</title>
+    </head>
+    <body>
+        <!-- CONTAINER MAIN -->
+        <div id="main-container">
+            <!-- LOGO / USERNAME / ROL-NAME -->
+            <div class="menu">
+                <div class="logo">
+                    <img th:src="@{img/Eggis_Farm_Logo.png}"/>
+                </div>
+                <div class="user-name">
+                    <h5>Lya M. Bautista</h5>
+                </div>
+                <div  class="rol-name">
+                    <h2 sec:authentication="name"></h2>
+                </div>
+                <!------------------------ MENU ---------------------->
+                <div id="op-ventas" class="op">
+                    <i class="fa-solid fa-truck-moving iconos"></i
+                    ><span class="sfonts">Ventas</span>
+                </div>
+                <div id="op-inventario" class="op">
+                    <i class="fa-solid fa-box-open iconos"></i
+                    ><a class="sfonts">Inventario</a>
+                </div>
+                <div id="op-reporte" class="op">
+                    <i class="fa-solid fa-box-archive iconos"></i
+                    ><a class="sfonts"> Reporte</a>
+                </div>
+                <div sec:authorize="hasRole('ROLE_ADMIN')" id="op-gestionarusuarios" class="op">
+                    <i class="fa-solid fa-users-rectangle iconos"></i
+                    ><a class="sfonts">Usuarios</a>
+                </div>
+                <div id="op-miperfil" class="op">
+                    <i class="fa-solid fa-address-card iconos"></i
+                    ><a class="sfonts">Mi Perfil</a>
+                </div>
+                <div sec:authorize="hasRole('ROLE_ADMIN')" id="op-registro" class="op">
+                    <i class="fa-solid fa-user-plus iconos"></i
+                    ><a class="sfonts">Registro</a>
+                </div>
+                <div id="op-salir" class="op">
+                    <form method="POST" th:action="@{/logout}">
+                        <i class="fa-solid fa-right-from-bracket iconos"></i
+                        ><a href="#" class="sfonts" onclick="this.parentNode.submit();"> Salir</a>
+                    </form>
+                </div>
+            </div>
+            <div id="second-main-container">
+                <div id="third-main-container">
+                    <div id="white-main-container"></div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
