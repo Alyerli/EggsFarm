@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Lato:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="resources/css/ventas.css" />
+    <link
+      rel="shortcut icon"
+      href="resources/img/Eggis Farm_Logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./lib/bootstrap.min.css" />
+    <title>Ventas</title>
+  </head>
+  <body>
+    <div id="ventas-main-container">
+        <span>Ventas</span>
+        <form onsubmit="event.preventDefault();onSubmit();" autocomplete="off">
+            <form onsubmit="event.preventDefault();onSubmit();" autocomplete="off">
+                 
+                <div class="tablita">
+                  <table class="tabla" id="tabla">
+                    <thead>
+                      <tr> 
+                        <th>ID venta</th> 
+                        <th>Fecha</th>
+                        <th>ID usuario</th>
+                        <th>ID producto</th>
+                        <th>Cantidad</th>
+                        <th>Total a pagar</th>
+                        <th>Total de venta</th>
+                      </tr>
+                    </thead>
+                      <tbody>
+        
+                      </tbody>
+                  </table>
+                </div>
+                <br/>
+                <br/>
+                <div class="caja">
+                  <label for="idventa">ID venta</label> <input type="number" id="idventa" placeholder="Escriba aqui" required>
+                  <label for="fecha">Fecha</label> <input type="date" id="fecha" placeholder="Escriba aqui" required>
+                  <label for="idusuario">ID usuario</label> <input type="number" id="idusuario" placeholder="Escriba aqui" required>
+                  <label for="idproducto">ID producto</label> <input type="number" id="idproducto" placeholder="Escriba aqui" required>
+                  <label for="cantidad">Cantidad</label> <input type="number" id="cantidad" placeholder="Escriba aqui" required>
+                  <label for="totalpagar">Total a pagar</label> <input type="number" id="totalpagar" placeholder="Escriba aqui" required>
+                  <label for="totalventa">Total de venta</label> <input type="number" id="totalventa" placeholder="Escriba aqui" required>
+                </div>
+                <br/>
+                <input class="submit" type="submit" value="Ingresar">
+                </form>
+          <br/>
+          <br/>
+          </div>
+  </body>
+  <script type="text/javascript" src="resources/js/tabla-ventas.js"></script>
+</html>
